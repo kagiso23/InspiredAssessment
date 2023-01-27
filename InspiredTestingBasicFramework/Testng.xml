@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Payments" parallel="tests" configfailurepolicy="continue">
+    <parameter name="environment" value="staging"/>
+    <test name="End to End Payment Flow">
+        <classes>
+            <class name="Tests.TakeAlot.TakeALotTests"/>
+        </classes>
+    </test>
+</suite>
